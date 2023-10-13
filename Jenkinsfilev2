@@ -11,7 +11,8 @@ pipeline {
  stage ('Deploy') {
   steps {
      sh '''#!/bin/bash
-     echo "command to run the setup2.sh"
+      scp setup.sh ubuntu@107.22.153.95:/home/ubuntu
+      ssh ubuntu@107.22.153.95 'bash -s </home/ubuntu/setup2.sh'
     '''
       }
     }
