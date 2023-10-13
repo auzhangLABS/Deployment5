@@ -31,7 +31,6 @@ steps {
 sh '''#!/bin/bash
 scp setup.sh ubuntu@18.234.214.169:/home/ubuntu
 ssh ubuntu@18.234.214.169
-./setup.sh
 '''
 }
 }
