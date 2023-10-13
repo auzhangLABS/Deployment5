@@ -2,14 +2,6 @@ pipeline {
 agent any
 stages {
 
-stage ('SSH into server2"){
-steps {
-sh '''
-ssh ubuntu@54.227.175.145
-'''
-}
-}
-
 stage ('Build') {
 steps {
 sh '''#!/bin/bash
@@ -37,7 +29,10 @@ junit 'test-reports/results.xml'
 stage ('Deploy') {
 steps {
 sh '''#!/bin/bash
-echo "command to run the setup.sh"
+ip_file=/var/lib/jenkins/ip_address.txt
+ip_address=$(cat "$ip_file")
+scp setup.sh ubuntu@"$ip_address":/home/ubuntu/
+ssh ubuntu@"$ip_address" 'bash -s < /home/ubuntu/setup.sh'
 '''
 }
 }
