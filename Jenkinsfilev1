@@ -1,6 +1,15 @@
 pipeline {
 agent any
 stages {
+
+stage ('SSH into server2"){
+steps {
+sh '''
+ssh ubuntu@54.227.175.145
+'''
+}
+}
+
 stage ('Build') {
 steps {
 sh '''#!/bin/bash
