@@ -7,7 +7,7 @@ The purpose of deployment 5 was to set up our AWS cloud infrastructure using inf
 We utilized Terraform to create our AWS cloud infrastructure. It created our VPC with two available zones and a public subnet in each (2 subnets total). We would also use a T2.micro with a security group in each of the subnets (2 EC2 total). To see the terraform file, click [here!](https://github.com/auzhangLABS/c4_deployment-5/blob/main/main.tf). 
 
 #### Installing Packages on EC2
-On one of the EC2, we installed Jenkins using the user data features, which allowed us to place a bash script to load the instance automatically with the features we implemented. To see the Jenkins script I used, click [here!]( Jenkins script )
+On one of the EC2, we installed Jenkins using the user data features, which allowed us to place a bash script to load the instance automatically with the features we implemented. To see the Jenkins script I used, click [here!](https://github.com/auzhangLABS/c4_deployment-5/blob/main/jenkins.sh)
 <br>
 In both instances, we install the following: <br>
 - `sudo apt install -y software-properties-common` : provides common infrastructure and scripts for managing software repositories.
