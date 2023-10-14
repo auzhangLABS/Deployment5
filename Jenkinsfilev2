@@ -4,7 +4,7 @@ pipeline {
     stage ('Clean') {
       steps {
       sh '''#!/bin/bash
-        scp /var/lib/jenkins/workspace/de5_main/pkill.sh ubuntu@50.19.33.25:/home/ubuntu
+        scp pkill.sh ubuntu@50.19.33.25:/home/ubuntu
         ssh ubuntu@50.19.33.25 'bash -s </home/ubuntu/pkill.sh'
         '''
      }
@@ -12,7 +12,7 @@ pipeline {
  stage ('Deploy') {
   steps {
      sh '''#!/bin/bash
-      scp /var/lib/jenkins/workspace/de5_main/setup2.sh ubuntu@50.19.33.25:/home/ubuntu
+      scp setup2.sh ubuntu@50.19.33.25:/home/ubuntu
       ssh ubuntu@50.19.33.25 'bash -s </home/ubuntu/setup2.sh'
     '''
       }
