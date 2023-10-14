@@ -2,6 +2,7 @@
 
 python3.7 -m venv test
 source test/bin/activate
+rm -rf c4_deployment-5
 git clone https://github.com/auzhangLABS/c4_deployment-5.git
 cd c4_deployment-5
 pip install -r requirements.txt
