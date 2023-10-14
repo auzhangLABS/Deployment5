@@ -3,9 +3,9 @@ pipeline {
    stages {
     stage ('Clean') {
       steps {
-        sh '''#!/bin/bash
-          scp pkill.sh ubuntu@50.19.33.25:/home/ubuntu
-          ssh ubuntu@50.19.33.25 'bash -s </home/ubuntu/pkill.sh'
+      sh '''#!/bin/bash
+        scp pkill.sh ubuntu@50.19.33.25:/home/ubuntu
+        ssh ubuntu@50.19.33.25 'bash -s </home/ubuntu/pkill.sh'
         '''
      }
    }
