@@ -1,4 +1,3 @@
-#!/bin/bash
 
 #!/bin/bash
 if [[ $(ps aux | grep -i "gunicorn" | tr -s " " | head -n 1 | cut -d " " -f 2) != 0 ]]
