@@ -2,6 +2,7 @@
 rm -rf c4_deployment-5
 source test/bin/activate
 git clone https://github.com/auzhangLABS/c4_deployment-5.git
+
 cd c4_deployment-5
 pip install -r requirements.txt
 pip install gunicorn
