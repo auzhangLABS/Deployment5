@@ -5,7 +5,7 @@ pipeline {
       steps {
         sh '''#!/bin/bash
               scp pkill.sh ubuntu@3.89.242.100:/home/ubuntu
-              ssh ubuntu@3.89.242.100 'bash -s </home/ubuntu/pkill.sh.sh'
+              ssh ubuntu@3.89.242.100 'bash -s </home/ubuntu/pkill.sh'
         '''
      }
    }
