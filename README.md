@@ -39,7 +39,7 @@ The first issue I had was with Jenkins. When I tried to build my pipeline, Jenki
 The second issue I had was when I made changes to my HTML file and it wasn't showing on the webpage despite having run Jenkins. I fix this by merging it back to the main branch and rerunning Jenkins on the main branch.
 
 ## Optimization
-I would optimize this deployment by creating a front-end instance that is open to the public instead of giving public access to my application and Jenkins server.
+To optimize this deployment, I was considering putting Jenkins into a private subnet instead of the public. This would add an extra layer of security to the Jenkins pipeline. Additionally, we can also use a NAT gateway in the public subnet to allow Jenkins in the private subnet to access the internet.
 
 
 
