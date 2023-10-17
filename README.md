@@ -30,6 +30,8 @@ After that is successful, I will change the home.html file and then run the seco
 
 The purpose of including two Jenkins files was to first install the dependencies and then test the application. Once we know it was successful, we can run the other Jenkins file and not worry about rerunning the dependencies.
 
+Please note: This process was done on a temp branch.
+
 ## System Design Diagram
 To view the system design diagram, click [here!](https://github.com/auzhangLABS/c4_deployment-5/blob/main/d5.drawio.png)
 
