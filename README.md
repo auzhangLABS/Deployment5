@@ -33,7 +33,7 @@ The purpose of including two Jenkins files was to first install the dependencies
 Please note: This process was done on a temp branch.
 
 ## System Design Diagram
-To view the system design diagram, click [here!](https://github.com/auzhangLABS/c4_deployment-5/blob/main/d5.drawio%20(1).png)
+To view the system design diagram, click [here!](https://github.com/auzhangLABS/c4_deployment-5/blob/main/deployment5.png)
 
 ## Issues and Troubleshooting
 The first issue I had was with Jenkins. When I tried to build my pipeline, Jenkins would throw me an error about how it wasn't able to find that Jenkins file. I realized that since I had two Jenkins files, I had to specify what version I was looking for.
